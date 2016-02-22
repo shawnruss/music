@@ -29,11 +29,33 @@ class Drummer(Musician):
     def count(self):
         for n in range (1, 5)):
             print(n)
-        print(" duh ... what's next")
+        #print(" duh ... what's next")
     
     def spontaneously_combust(self):
         print(".......... WHOOOMPA!!")
     
+class Band():
+    def __init__(self, drummer):
+        self.musicians = []
+        self.musicians.append(drummer)
     
+    def hireMuso(self, muso)
+        self.musicians.append(muso)
+    
+    def fireMuso(self, muso)
+        self.musicians.remove(muso)
         
+    def playSolos(self)
+        self.musicians[0].count
+        for musician in self.musicians:
+            musician.solo(6)
+        
+# find a drummer
+# form the band
+# hire the other musos
+# play the solos
+# fire the musos, except for the drummer
+# drummer combusts
+
+
     
