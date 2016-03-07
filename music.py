@@ -27,7 +27,7 @@ class Drummer(Musician):
         super().__init__(["Bom Bom", "Kaboom", "Crash"])
     
     def count(self):
-        for n in range (1, 5)):
+        for n in range (1, 5):
             print(n)
         #print(" duh ... what's next")
     
@@ -39,23 +39,34 @@ class Band():
         self.musicians = []
         self.musicians.append(drummer)
     
-    def hireMuso(self, muso)
+    def hireMuso(self, muso):
         self.musicians.append(muso)
     
-    def fireMuso(self, muso)
+    def fireMuso(self, muso):
         self.musicians.remove(muso)
         
-    def playSolos(self)
-        self.musicians[0].count
+    def playSolos(self):
+        self.musicians[0].count()
         for musician in self.musicians:
             musician.solo(6)
         
 # find a drummer
+theDrummer = Drummer()
+
 # form the band
+theBand = Band(theDrummer)
+
 # hire the other musos
+theBassist = Bassist()
+theGuitarist = Guitarist()
+theBand.hireMuso(theBassist)
+theBand.hireMuso(theGuitarist)
+
 # play the solos
+theBand.playSolos()
+
 # fire the musos, except for the drummer
+theBand.fireMuso(theBassist)
+
 # drummer combusts
-
-
-    
+theDrummer.spontaneously_combust()
